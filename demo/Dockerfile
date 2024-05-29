@@ -16,6 +16,9 @@ RUN pip3 install -r requirements.txt
 # Copy the ops directory to the working directory
 COPY ops /app/ops
 
+# Copy manage.py to the working directory
+COPY manage.py /app/
+
 # Change the working directory to /app/ops
 WORKDIR /app/ops
 
